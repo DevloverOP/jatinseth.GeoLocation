@@ -1,0 +1,81 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GEO-Location</title>
+    <style type="text/css">
+      .container {
+        border: 2px solid blue;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+        margin: auto;
+        margin-top: 10vh; 
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: larger;
+      }
+      .c2 {
+        /* display: flex;
+        justify-content: space-around; */
+        margin-top: 5px;
+        border: 2px solid red;
+        height: auto;
+      }
+      .btn {
+        padding: 10px;
+        border-radius: 50px;
+        font-size: large;
+        background-color: rgb(248, 49, 49);
+        color: white;
+      }
+
+      @keyframes move {
+        0% {
+          background-color: white;
+          color: black;
+        }
+        100% {
+          background-color: green;
+          color: white;
+        }
+      }
+      @keyframes stop {
+        0% {
+          background-color: white;
+          color: black;
+        }
+        100% {
+          background-color: red;
+          color: white;
+        }
+      }
+      #indicator{
+        border: 2px solid;
+        border-radius: 100%;
+        margin: 5px;
+        padding:5px 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    Indicator<a id="indicator"></a>
+    <div class="container">
+      <p id="today"></p>
+      <p id="lat">Latitude:</p>
+      <p id="long">Longitude:</p>
+      <p id="loc">Your curent location is:</p>
+      <!-- <button class="btn" id="getloc">Get Location</button> -->
+      <button class="btn" id="clear">Clear Location</button>
+    </div>
+        <div class="container c2">
+      <label for="speed">Meter per Second</label>
+          <p id="speed">Speed:</p>
+          <p id="state">State:</p>
+    </div>
+    <script src="./script.js"></script>
+ </body>
+</html>
